@@ -1,0 +1,274 @@
+.header-nav, .main-row, .main-card, .main-card__text, .main-review, .reviews, .review-card, .review-card__text, .search-form, .date, .footer, .footer__menu, .feedback_and_payments {
+  display: grid;
+}
+
+.li-nav, .header__text, .main-row__hot-tours, .main-review h2, .search-individual-tour h3 {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  font-weight: 200;
+}
+
+.header__image {
+  background-image: url("./../img/4.jpg");
+  background-position-y: top;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-nav {
+  grid-template-columns: repeat(10, 1fr);
+  width: 40vw;
+  font-size: 1.5em;
+  margin-left: 1%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.li-nav {
+  color: #dfc1d9;
+  cursor: pointer;
+  display: inline;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.li-item {
+  color: #9f86a2;
+  text-decoration: none;
+}
+
+.header__text {
+  padding: 5vw;
+  margin: 10vw auto;
+  font-size: 3em;
+  color: #ddd;
+  width: 50vw;
+  font-weight: 100;
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid gray;
+  color: gray;
+  padding: 1vw 2vw;
+  cursor: pointer;
+  margin-left: 45%;
+}
+.btn:hover {
+  color: white;
+  background-color: #0000005e;
+}
+
+.main-row {
+  grid-gap: 3vw;
+  margin: 2vw 20vw;
+  justify-content: center;
+}
+
+.main-row__hot-tours {
+  font-size: 3em;
+  font-weight: 100;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.main-card {
+  box-shadow: 0 0 10px gray;
+  grid-template-columns: 1fr 3fr;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.card__image {
+  height: 100%;
+  min-height: 5vw;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: top;
+}
+
+.card__image-first {
+  background-image: url("./../img/5.jpeg");
+}
+
+.card__image-second {
+  background-image: url("./../img/6.jpg");
+}
+
+.card__image-third {
+  background-image: url("./../img/7.jpg");
+}
+
+.main-card__text {
+  color: #69395e;
+  padding: 2vh;
+  font-family: 'Fresca', sans-serif;
+}
+.main-card__text h2 {
+  font-weight: 100;
+  font-size: 2em;
+  text-align: start;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.main-review {
+  background-color: #8a6f8d;
+  width: 80vw;
+  padding: 1vw;
+}
+.main-review h2 {
+  color: #caa2cb;
+  font-size: 2em;
+  margin-bottom: 1vw;
+  font-weight: 100;
+}
+
+.reviews {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1vw;
+}
+
+.review-card {
+  padding: 1vh;
+  background: #caa2cb;
+  grid-template-columns: 1fr 3fr;
+}
+
+.circle-image {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+}
+
+.review-card__text {
+  padding: 0 2vh;
+  align-content: center;
+  color: white;
+  font-family: 'Hind', sans-serif;
+}
+.review-card__text span {
+  font-style: italic;
+}
+
+.search-individual-tour {
+  width: 50vw;
+  padding: 1vw;
+  background-color: #9f86a2;
+}
+.search-individual-tour h3 {
+  font-size: 2em;
+  color: #542147;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 100;
+}
+
+.search-form {
+  grid-column-gap: .5vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.date {
+  grid-column-gap: .5vw;
+  grid-template-columns: 1fr 1fr;
+}
+
+.search-form__inputs {
+  padding: 0.5vh;
+  border: 0;
+  border-radius: 0;
+  background-color: #9f86a2;
+  border-bottom: 1px solid #725e68;
+  color: #725e68;
+}
+
+.footer {
+  height: 100%;
+  padding: 1vw 0 2vw;
+  grid-template-columns: repeat(3, 1fr);
+  background: #5d3d85;
+  margin-top: 8vh;
+  font-family: none;
+}
+
+.social-network {
+  padding-left: 2vw;
+}
+.social-network h3 {
+  color: #C93FFF;
+  margin: 0 0 1vw 0;
+}
+.social-network img {
+  width: 2vw;
+  height: 2vw;
+  padding-right: 1vw;
+}
+
+.social-network__copyright {
+  color: #4f0a5e;
+  padding-top: 2vw;
+}
+
+.footer__menu {
+  grid-template-columns: 1fr 1fr;
+}
+
+.tour-contact h3 {
+  margin: 0 0 .5vw;
+  color: #C93FFF;
+}
+.tour-contact ul {
+  margin: 0;
+  padding: 0 0 0 1vw;
+  width: 100%;
+}
+.tour-contact ul li {
+  list-style-type: none;
+}
+.tour-contact ul li a {
+  color: #8a46de;
+  text-decoration: none;
+  font-size: 1em;
+}
+.tour-contact ul li a:hover {
+  color: #4f0a5e;
+}
+
+.send-email {
+  padding-right: 2vw;
+}
+.send-email button {
+  margin-top: 1vw;
+  background: #4f0a5e;
+  padding: .5vw;
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  color: white;
+}
+.send-email button:hover {
+  background: #C93FFF;
+  color: white;
+}
+.send-email input {
+  width: 97%;
+  border: 0;
+  padding: .5vw;
+  color: #76769f;
+}
+
+.payments h3 {
+  color: #C93FFF;
+  margin: 1vw 0 0;
+}
+.payments img {
+  width: 3vw;
+  padding-right: 1vw;
+}
+
+/*# sourceMappingURL=style2.css.map */
